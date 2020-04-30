@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  font-family: Montserrat;
+}
+
+ul  {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  font-size: 12px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+#navbar .container {
+  max-width: none;
+}
+
+#navbar img {
+  height: 15px;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li#bordered {
+border-left: 2px solid black;
+border-right: 2px solid black;
+}
+
+#navbar a {
+  text-transform: uppercase;
+  margin: 0 8px;
+}
+
+.jumbotron {
+  position: relative;
+  margin-top: 72px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 680px;
+  color: white;
+}
+
+.jumbotron .intent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
