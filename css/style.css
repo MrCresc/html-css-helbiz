@@ -77,3 +77,33 @@ border-right: 2px solid black;
 .jumbotron .intent img {
 padding-top: 15px;
 }
+
+#vehicles .container {
+  max-width: 1440px;
+}
+
+#vehicles [class*=col-] {
+  padding: 50px 0;
+}
+
+#vehicles h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#vehicles p {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+#vehicles a {
+  display: block;
+  color: #0070c8;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#vehicles img {
+  height: 400px;
+}
