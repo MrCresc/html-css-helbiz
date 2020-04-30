@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  font-family: Montserrat;
+  font-family: Open Sans;
 }
 
 ul  {
@@ -18,7 +18,7 @@ a {
   top: 0px;
   left: 0px;
   background-color: white;
-  font-size: 12px;
+  font-size: 14px;
   padding: 30px 0;
   width: 100%;
 }
@@ -61,4 +61,19 @@ border-right: 2px solid black;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.jumbotron .intent h1 {
+  font-size: 60px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.jumbotron .intent p {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.jumbotron .intent img {
+padding-top: 15px;
 }
