@@ -12,6 +12,18 @@ a {
   text-decoration: none;
 }
 
+.relative {
+  position: relative;
+  height: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .justify {
   text-align: justify;
 }
@@ -60,25 +72,18 @@ border-right: 2px solid black;
   color: white;
 }
 
-.jumbotron .intent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.jumbotron .intent h1 {
+.jumbotron .centered h1 {
   font-size: 60px;
   padding: 10px 0;
   font-weight: 600;
 }
 
-.jumbotron .intent p {
+.jumbotron .centered p {
   font-size: 20px;
   padding: 5px 0;
 }
 
-.jumbotron .intent img {
+.jumbotron .centered img {
 padding-top: 15px;
 }
 
@@ -105,8 +110,16 @@ padding-top: 15px;
 }
 
 #vehicles img {
-  height: 400px;
+  width: 430px;
 }
+
+.greycontainer {
+  background-color: #fafafa;
+  margin: 0 15px;
+  padding-bottom: 10px;
+}
+
+/* -------------------------------------------------------- */
 
 .bgoldman {
   background-image: url(../img/HelbizBanner.jpg);
@@ -116,6 +129,8 @@ padding-top: 15px;
   height: 500px;
   color: white;
 }
+
+/* -------------------------------------------------------- */
 
 #steps img {
   height: 600px;
@@ -135,4 +150,240 @@ padding-top: 15px;
   padding-top: 30px;
   font-size: 20px;
   font-weight: 500;
+}
+
+#steps .container .justify h6 {
+  font-size: 14px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+/* -------------------------------------------------------- */
+
+#features .container {
+  max-width: 1700px;
+  color: white;
+}
+
+#features > .container:nth-child(1) > [class*=col-] {
+  padding: 20px;
+  height: 610px;
+}
+
+#features .container .nested {
+  height: 100%;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#features [class*=col-] {
+  height: 100%;
+}
+
+#features .container [class*=col-] .container [class*=col-] {
+  position: relative;
+}
+
+#features h3 {
+  font-size: 50px;
+}
+
+#features h5 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+#features a {
+  color: white;
+}
+
+#features > .container:nth-child(2) {
+  padding: 0 20px;
+  margin: 20px auto;
+  height: 100%;
+}
+
+#features > .container:nth-child(2) [class*=col-] {
+  height: 500px;
+}
+
+#features > .container:nth-child(2) > [class*=col-] img {
+  max-width: 100%;
+}
+
+#features > .container:nth-child(2) > [class*=col-] h3 {
+  padding-top: 60px;
+}
+
+#features > .container:nth-child(2) > [class*=col-] {
+  overflow: hidden;
+}
+
+#features > .container:nth-child(2) > [class*=col-]:nth-child(1) .resizer {
+  margin: 0 20px 0 0;
+  background: linear-gradient(to bottom, #44596c 0%, #232d34 100%);
+  height: 100%;
+  padding: 40px;
+}
+
+#features > .container:nth-child(2) > [class*=col-]:nth-child(2) .resizer {
+  margin: 0 0 0 20px;
+  background-image: url(../img/Cities-1500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding: 40px;
+}
+
+/* -------------------------------------------------------- */
+
+#socialpictures .bgsocial {
+  position: relative;
+  margin: 40px 0;
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#socialpictures .bgsocial .centered.helbizfamily {
+  color: black;
+  position: absolute;
+  background-color: white;
+  padding: 60px 120px;
+}
+
+#socialpictures .bgsocial .centered.helbizfamily h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#socialpictures .bgsocial .centered.helbizfamily li {
+  display: inline-block;
+}
+
+#socialpictures .bgsocial .centered.helbizfamily i {
+  margin: 8px 12px;
+  font-size: 30px;
+}
+
+footer {
+  padding: 100px 150px;
+  background-color: black;
+}
+
+footer h3 {
+  display: inline-block;
+  color: white;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: grey;
+}
+
+footer li {
+  padding: 5px 0;
+}
+
+footer .container.social-legals {
+  color: white;
+}
+
+footer .container.social-legals a {
+  color: white;
+  font-size: 12px;
+}
+
+footer .container.social-legals li {
+  display: inline-block;
+}
+
+footer .container.social-legals i {
+  margin: 0 12px;
+  font-size: 20px;
+}
+
+hr {
+  max-width: 1170px;
+  margin: 40px auto;
+  color: grey;
+}
+
+footer .relative .centered {
+  margin-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 762px) and (max-width: 991px) {
+  #steps img {
+    height: 400px;
+    margin-top: -150px;
+  }
+
+  #steps .container .justify {
+    padding: 50px;
+    text-align: center;
+  }
+
+  #features .centered {
+    text-shadow: 0px 0px 6px black;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-]:nth-child(1) .resizer {
+    margin: 0 auto;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-]:nth-child(2) .resizer {
+    margin: 40px auto;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-] img {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  #steps img {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  #steps .container .justify h3 {
+    margin-top: 30px;
+  }
+
+  #steps .container .justify h5 {
+    padding-top: 0;
+  }
+
+  #steps .container .justify h6 {
+    padding-bottom: 20px;
+  }
+
+  #steps .container .justify {
+    padding: 0;
+    text-align: center;
+  }
+
+  #features .centered {
+    text-shadow: 0px 0px 6px black;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-]:nth-child(1) .resizer {
+    margin: 0 auto;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-]:nth-child(2) .resizer {
+    margin: 40px auto;
+  }
+
+  #features > .container:nth-child(2) > [class*=col-] img {
+    margin-top: 20px;
+  }
 }
