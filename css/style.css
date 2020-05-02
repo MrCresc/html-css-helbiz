@@ -1,3 +1,4 @@
+/* Regole generali */
 body {
   text-align: center;
   font-family: Open Sans;
@@ -27,6 +28,7 @@ a {
 .justify {
   text-align: justify;
 }
+/* Fine Regole generali */
 
 /* Sezione Hover */
 .hover1:hover {
@@ -49,9 +51,9 @@ a {
   transform: scale(1.5);
   color: #83FFDB;
 }
-
 /* Fine Sezione Hover */
 
+/* Navbar */
 #navbar {
   z-index: 1;
   position: fixed;
@@ -84,7 +86,9 @@ border-right: 2px solid black;
   text-transform: uppercase;
   margin: 0 8px;
 }
+/* Fine Navbar */
 
+/* Jumbotron */
 .jumbotron {
   position: relative;
   margin-top: 72px;
@@ -110,7 +114,9 @@ border-right: 2px solid black;
 .jumbotron .centered img {
 padding-top: 15px;
 }
+/* Fine Jumbotron */
 
+/* Sezione veicoli */
 #vehicles {
   padding: 100px 0;
 }
@@ -134,7 +140,7 @@ padding-top: 15px;
 }
 
 #vehicles img {
-  width: 430px;
+  max-width: 430px;
 }
 
 .greycontainer {
@@ -142,8 +148,7 @@ padding-top: 15px;
   margin: 0 15px;
   padding-bottom: 10px;
 }
-
-/* -------------------------------------------------------- */
+/* Fine Sezione veicoli */
 
 .bgoldman {
   background-image: url(../img/HelbizBanner.jpg);
@@ -154,8 +159,7 @@ padding-top: 15px;
   color: white;
 }
 
-/* -------------------------------------------------------- */
-
+/* Sezione steps */
 #steps img {
   height: 600px;
   margin-top: -300px;
@@ -181,9 +185,9 @@ padding-top: 15px;
   padding-top: 5px;
   font-weight: 500;
 }
+/* Fine Sezione steps */
 
-/* -------------------------------------------------------- */
-
+/* Sezione features */
 #features .container {
   max-width: 1700px;
   color: white;
@@ -259,9 +263,9 @@ padding-top: 15px;
   height: 100%;
   padding: 40px;
 }
+/* Fine Sezione features */
 
-/* -------------------------------------------------------- */
-
+/* Sezione social */
 #socialpictures .bgsocial {
   position: relative;
   margin: 40px 0;
@@ -291,7 +295,9 @@ padding-top: 15px;
   margin: 8px 12px;
   font-size: 30px;
 }
+/* Fine Sezione social */
 
+/* Sezione footer */
 footer {
   padding: 100px 150px;
   background-color: black;
@@ -338,13 +344,11 @@ hr {
 footer .relative .centered {
   margin-top: 20px;
 }
+/* Fine Sezione footer */
 
+/* ------------------------------------------------------------------------- */
 
-
-
-
-
-
+/* Media query 762px-991px */
 @media screen and (min-width: 762px) and (max-width: 991px) {
   #steps img {
     height: 400px;
@@ -381,8 +385,14 @@ footer .relative .centered {
     padding: 100px 25px;
   }
 }
+/* Fine Media query 762px-991px */
 
+/* Media query < 761px */
 @media screen and (max-width: 761px) {
+  #vehicles img {
+    max-width: 250px;
+  }
+
   #steps img {
     height: 300px;
     margin-top: 20px;
@@ -421,6 +431,15 @@ footer .relative .centered {
     margin-top: 20px;
   }
 
+  #socialpictures .bgsocial .centered.helbizfamily {
+    padding: 30px 30px;
+  }
+
+  #socialpictures .bgsocial .centered.helbizfamily h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
   footer .container [class*=col-] {
     padding: 20px 0;
     text-align: center;
@@ -430,3 +449,4 @@ footer .relative .centered {
     padding: 100px 25px;
   }
 }
+/* Fine Media query < 761px */
