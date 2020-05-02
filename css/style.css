@@ -28,6 +28,30 @@ a {
   text-align: justify;
 }
 
+/* Sezione Hover */
+.hover1:hover {
+  transition: color 0.3s;
+  color: #b34700;
+}
+
+.hover2:hover {
+  transition: color 0.3s;
+  color: #83FFDB;
+}
+
+.hover3:hover {
+  transition: text-shadow 0.3s;
+  text-shadow: 0px 0px 6px white;
+}
+
+.hover4:hover {
+  transition: transform 0.2s;
+  transform: scale(1.5);
+  color: #83FFDB;
+}
+
+/* Fine Sezione Hover */
+
 #navbar {
   z-index: 1;
   position: fixed;
@@ -320,6 +344,7 @@ footer .relative .centered {
 
 
 
+
 @media screen and (min-width: 762px) and (max-width: 991px) {
   #steps img {
     height: 400px;
@@ -345,6 +370,15 @@ footer .relative .centered {
 
   #features > .container:nth-child(2) > [class*=col-] img {
     margin-top: 20px;
+  }
+
+  footer .container [class*=col-] {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer {
+    padding: 100px 25px;
   }
 }
 
@@ -385,5 +419,14 @@ footer .relative .centered {
 
   #features > .container:nth-child(2) > [class*=col-] img {
     margin-top: 20px;
+  }
+
+  footer .container [class*=col-] {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer {
+    padding: 100px 25px;
   }
 }
