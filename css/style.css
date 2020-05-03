@@ -348,8 +348,8 @@ footer .relative .centered {
 
 /* ------------------------------------------------------------------------- */
 
-/* Media query 762px-991px */
-@media screen and (min-width: 762px) and (max-width: 991px) {
+/* Media query 768px-991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #steps img {
     height: 400px;
     margin-top: -150px;
@@ -385,12 +385,16 @@ footer .relative .centered {
     padding: 100px 25px;
   }
 }
-/* Fine Media query 762px-991px */
+/* Fine Media query 768px-991px */
 
-/* Media query < 761px */
-@media screen and (max-width: 761px) {
+/* Media query < 767px */
+@media screen and (max-width: 767px) {
   #vehicles img {
     max-width: 250px;
+  }
+
+  .bgoldman {
+    background-position: -245px;
   }
 
   #steps img {
